@@ -94,3 +94,19 @@ Properties:
 - Addressed (Checkbox): Whether the feedback has been addressed
 - Action Taken (Rich Text): Description of how the feedback was handled
 - Impact (Select): None, Minor, Major (how it affected the story)
+
+## 8. User Feedback Database
+Purpose: Collect and organize user/community feedback to influence story direction and improvements.
+Properties:
+Feedback ID (Title): Unique identifier for each piece of feedback
+Content (Rich Text): The actual feedback or suggestion
+Type (Select): Plot Suggestion, Character Development, World Building, Writing Style, General Comment
+Related Chapter (Relation): Link to the relevant chapter(s)
+Related Character (Relation): Link to the relevant character(s), if applicable
+Status (Select): New, Under Review, Accepted, Implemented, Rejected
+Impact Level (Select): Low, Medium, High
+User/Community Member (Text): Name or identifier of the feedback provider
+Date Received (Date): When the feedback was submitted
+Date Processed (Date): When the feedback was reviewed/acted upon
+AI Writer Notes (Rich Text): Notes from AI agents about how to incorporate the feedback
+Implementation Details (Rich Text): Description of how the feedback was implemented in the story
