@@ -1,0 +1,4 @@
+1. create virtual enviroment to run code 
+2. Setup test code for notion api 
+3. setup test code for openai api 
+4. update requirements and gitignore files 
