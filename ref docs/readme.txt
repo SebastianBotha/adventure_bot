@@ -34,9 +34,28 @@ ADVENTURE_BOT/
 │   ├── changelog.txt
 │   ├── todo.txt
 │   ├── Q&A.txt
+│   ├── notion-database-structure.md
 │   └── readme.txt
 │ 
 ├── src/
+│   ├── notion_api/
+│   │   ├── __init__.py
+│   │   ├── story_db.py
+│   │   ├── characters_db.py
+│   │   ├── world_db.py
+│   │   ├── writers_db.py
+│   │   └── outline_db.py
+│   ├── ai_agents/
+│   │   ├── __init__.py
+│   │   ├── creative_writer.py
+│   │   ├── expander.py
+│   │   ├── creative_critique.py
+│   │   ├── audience_optimizer.py
+│   │   ├── style_tone_adjuster.py
+│   │   └── final_editor.py
+│   ├── utils/
+│   │   ├── config_loader.py
+│   │   └── logger.py
 │   ├── notion_api.py
 │   ├── claude_api.py
 │   ├── openai_api.py
@@ -48,11 +67,13 @@ ADVENTURE_BOT/
 │   └── test_openai_api.py
 │
 ├── config.yml
+├── logs/
 │
 ├── requirements.txt
 ├── .gitignore
 ├── .env
 └── environment.yml
+
 </CODE STRUCTURE>
 
 <SETUP INSTRUCTIONS>
