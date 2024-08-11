@@ -1,7 +1,15 @@
-1. [DONE] Fix OpenAI API integration error
-2. [DONE] Implement basic Notion API integration for Steps Logger
-3. Implement more advanced storytelling features using Notion and OpenAI
-4. Create a scheduling system for regular story updates
-5. Implement error handling and logging for robustness
-6. Add unit tests for Notion and OpenAI integrations
-7. Refactor code for better modularity and reusability
+# Todo List
+1. [DONE] Implement basic Notion API integration for Steps Logger
+2. [DONE] Implement more advanced storytelling features using Notion and OpenAI
+3. [IN PROGRESS] Create a scheduling system for regular story updates
+4. [IN PROGRESS] Implement error handling and logging for robustness
+5. [IN PROGRESS] Add unit tests for Notion and OpenAI integrations
+6. [IN PROGRESS] Refactor code for better modularity and reusability
+7. [NEW] Implement User Feedback Database in Notion
+8. [NEW] Develop feedback_db.py module for CRUD operations on User Feedback Database
+9. [NEW] Create feedback_analyzer.py AI agent for processing user feedback
+10. [NEW] Update main.py to incorporate feedback analysis in story generation workflow
+11. [NEW] Modify existing AI agent modules to consider feedback suggestions
+12. [NEW] Design and implement a user interface for feedback submission (web form, email system, or community platform integration)
+13. [NEW] Test and refine the feedback incorporation process
+14. [NEW] Update documentation to reflect new feedback-driven storytelling approach
