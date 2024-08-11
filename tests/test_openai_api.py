@@ -1,46 +1,28 @@
-import sys
+from openai import OpenAI
 import os
+from dotenv import load_dotenv
 
-# Adjust the Python path to include the src directory
-# This allows us to import modules from the src directory
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+# Load environment variables from .env file
+load_dotenv()
 
-import unittest
-from openai_api import send_prompt
+# Initialize the OpenAI client
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-class TestOpenAIApi(unittest.TestCase):
+def send_prompt(prompt, model="gpt-4", max_tokens=50):
     """
-    Unit tests for the OpenAI API integration.
+    Sends a prompt to the OpenAI API and returns the response.
+
+    :param prompt: The prompt to send to the API
+    :param model: The model to use (default is "gpt-4")
+    :param max_tokens: The maximum number of tokens to generate (default is 50)
+    :return: The response from the API
     """
-
-    def test_send_prompt(self):
-        """
-        Test sending a simple prompt to the OpenAI API.
-        This test checks if the response is a non-empty string.
-        """
-        prompt = "Once upon a time"
-        response = send_prompt(prompt)
-        
-        # Check if the response is a string
-        self.assertIsInstance(response, str)
-        
-        # Check if the response is non-empty
-        self.assertGreater(len(response), 0)
-    
-    def test_send_prompt_with_specific_model(self):
-        """
-        Test sending a prompt to the OpenAI API with a specific model.
-        This test checks if the response is a non-empty string.
-        """
-        prompt = "Tell me a joke"
-        response = send_prompt(prompt, model="text-curie-001")
-        
-        # Check if the response is a string
-        self.assertIsInstance(response, str)
-        
-        # Check if the response is non-empty
-        self.assertGreater(len(response), 0)
-
-if __name__ == '__main__':
-    # Run the unit tests
-    unittest.main()
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=max_tokens
+        )
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        return f"An error occurred: {e}"
