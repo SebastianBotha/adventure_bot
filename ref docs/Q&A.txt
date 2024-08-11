@@ -1,0 +1,11 @@
+Q: How do we access properties in a Notion database?
+A: Notion properties are accessed through the 'properties' key in the page object. Different property types have different structures:
+   - For 'title' properties: properties["Property Name"]["title"][0]["plain_text"]
+   - For 'select' properties: properties["Property Name"]["select"]["name"]
+   - For 'created_time' properties: properties["Property Name"]["created_time"]
+
+Q: How do we handle errors when interacting with the Notion API?
+A: We use try-except blocks to catch and handle exceptions. We print error messages for debugging and return default values to prevent the program from crashing.
+
+Q: How do we increment steps and alternate feet in the Steps Logger?
+A: We retrieve the last step from the database, increment the step number, alternate the foot (Left if the last was Right, and vice versa), and then add a new entry to the database with these updated values.

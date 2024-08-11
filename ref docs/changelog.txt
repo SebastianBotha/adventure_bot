@@ -4,4 +4,12 @@ updated the reference documents to include all relevant file
 
 --
 11 AUG 2024 - 12:30
-Working OpenAI integration, added example for Haiku in comments under openai_api.py 
+Working OpenAI integration, added example for Haiku in comments under openai_api.py
+
+--
+11 AUG 2024 - 21:15
+Implemented Notion API integration:
+- Successfully connected to Notion database
+- Created functionality to read and update Steps Logger
+- Implemented step increment and foot alternation
+- Debugged and resolved issues with property access in Notion database

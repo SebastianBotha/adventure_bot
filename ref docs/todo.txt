@@ -1,7 +1,7 @@
-1. fix error: (base) sebastianbotha@SebastinsLaptop adventure_bot % /Users/sebastianbotha/miniconda3/envs/adventure_bot/bin/python /Users/sebastianbotha/Documents/Python/
-adventure_bot/src/main.py
-{
-    "error": "\n\nYou tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.\n\nYou can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. \n\nAlternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`\n\nA detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742\n"
-}
-
-
+1. [DONE] Fix OpenAI API integration error
+2. [DONE] Implement basic Notion API integration for Steps Logger
+3. Implement more advanced storytelling features using Notion and OpenAI
+4. Create a scheduling system for regular story updates
+5. Implement error handling and logging for robustness
+6. Add unit tests for Notion and OpenAI integrations
+7. Refactor code for better modularity and reusability
