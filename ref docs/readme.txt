@@ -44,12 +44,20 @@ ADVENTURE_BOT/
 │
 ├── tests/
 │   ├── test_notion_api.py
-│   └── test_claude_api.py
+│   ├── test_claude_api.py
 │   └── test_openai_api.py
 │
 ├── config.yml
 │
 ├── requirements.txt
 ├── .gitignore
-└── .env
+├── .env
+└── environment.yml
 </CODE STRUCTURE>
+
+<SETUP INSTRUCTIONS>
+To set up the development environment, follow these steps:
+**Create the Conda Environment**: Navigate to the project directory and create the Conda environment using the `environment.yml` file:
+   ```sh
+   cd /path/to/ADVENTURE_BOT
+   conda env create -f environment.yml
