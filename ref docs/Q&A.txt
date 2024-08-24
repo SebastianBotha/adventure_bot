@@ -9,3 +9,9 @@ A: We use try-except blocks to catch and handle exceptions. We print error messa
 
 Q: How do we increment steps and alternate feet in the Steps Logger?
 A: We retrieve the last step from the database, increment the step number, alternate the foot (Left if the last was Right, and vice versa), and then add a new entry to the database with these updated values.
+
+Q: How do we ensure our Notion database structures are correct?
+A: We've created a comprehensive test suite (test_notion_structure.py) that checks each database's structure against our expected structure. This test can be run regularly to catch any discrepancies between our code's expectations and the actual Notion database setup.
+
+Q: What's the best way to start building the main application?
+A: We'll start by building the application in small, incremental steps. We'll begin with setting up the basic structure, then implement functions to read from each Notion database. From there, we'll create a simple workflow that generates a basic story outline, implement the Creative Writer AI agent, and gradually add more functionality.

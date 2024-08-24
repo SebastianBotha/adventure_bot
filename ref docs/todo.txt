@@ -1,8 +1,15 @@
 # Todo List
 1. [DONE] Implement basic Notion API integration for Steps Logger
 2. [DONE] Implement more advanced storytelling features using Notion and OpenAI
-3. [FUTURE] Create a scheduling system for regular story updates
-4. [FUTURE] Implement error handling and logging for robustness
-5. [FUTURE] Add unit tests for Notion and OpenAI integrations
-6. [FUTURE] Refactor code for better modularity and reusability
-7. [NEXT] Develop pipeline step by step base
+3. [DONE] Create a comprehensive test suite for Notion database structures
+4. [NEXT] Start coding the main application in small, incremental steps:
+   a. Set up the basic structure for the main application
+   b. Implement functions to read from each Notion database
+   c. Create a simple workflow that generates a basic story outline
+   d. Implement the Creative Writer AI agent
+   e. Add functionality to expand the outline into a full chapter
+5. [FUTURE] Implement error handling and logging for robustness
+6. [FUTURE] Create a scheduling system for regular story updates
+7. [FUTURE] Implement feedback analysis and integration
+8. [FUTURE] Develop a user interface for managing the story generation process
+9. [FUTURE] Integrate with publishing platforms (e.g., Medium) for automated sharing
