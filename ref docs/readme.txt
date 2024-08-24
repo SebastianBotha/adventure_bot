@@ -38,7 +38,7 @@ ADVENTURE_BOT/
 │   └── readme.txt
 │ 
 ├── src/
-│   ├── notion_api/
+│   ├── notion_apis/
 │   │   ├── __init__.py
 │   │   ├── story_db.py
 │   │   ├── characters_db.py
@@ -62,7 +62,8 @@ ADVENTURE_BOT/
 │
 ├── tests/
 │   ├── test_notion_api.py
-│   └── test_openai_api.py
+│   ├── test_openai_api.py
+│   └── test_notion_structure
 │
 ├── config.yml
 ├── logs/
