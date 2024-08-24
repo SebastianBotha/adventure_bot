@@ -1,2 +1,11 @@
 notion:
   steps_logger_database_id: 2d106baacef34340819e02c4a42913e5
+  story_database_id: 43e113f0f81b4fc285f62b4c39790c58
+  characters_database_id: 267823594da345c4a1be3f9cc45916da
+  world_database_id: 7d712258f2f445f2a54ed81f51188ddd
+  story_arcs_database_id: 9068dc6b74c1426e823f9cbd7ce78f6a
+  story_rules_database_id: 58ab12d8a2904d76824587be3c2c0ac4
+  feedback_database_id: 75be49d9e31a438e9028bf09be1133d0
+  ai_writers_database_id: d8bb736f17e244d19f0f2d03b5300c79
+
+  

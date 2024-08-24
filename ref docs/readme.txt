@@ -57,13 +57,11 @@ ADVENTURE_BOT/
 │   │   ├── config_loader.py
 │   │   └── logger.py
 │   ├── notion_api.py
-│   ├── claude_api.py
 │   ├── openai_api.py
 │   └── main.py
 │
 ├── tests/
 │   ├── test_notion_api.py
-│   ├── test_claude_api.py
 │   └── test_openai_api.py
 │
 ├── config.yml

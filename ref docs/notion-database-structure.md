@@ -6,15 +6,15 @@ Purpose: Store each chapter of the ongoing story.
 Properties:
 - Title (Title): Chapter title
 - Content (Rich Text): The full text of the chapter (10-minute read length)
-- Date Created (Date): Automatically set
+- Date Created (Created Time): Automatically set
 - Last Edited (Last Edited Time): Automatically updated
 - Chapter Number (Number): Sequential chapter number
 - Word Count (Number): Total words in the chapter
 - Main Characters (Multi-select): Links to characters featured in this chapter
 - Location (Select): Main setting of the chapter
-- Story Arc (Relation): Which major story arc this chapter belongs to
+- Story Arc (Select): Which major story arc this chapter belongs to
 - Quality Rating (Number): Rating from 1-10 based on quality check
-- Status (single select): Either Produced or Shared where Shared is if it has been published to an social channel like Medium 
+- Status (Select): Either Produced or Shared where Shared is if it has been published to a social channel like Medium
 
 ## 2. Characters Database
 Purpose: Keep track of all characters in the story.
@@ -26,7 +26,7 @@ Properties:
 - Status (Select): Active, Inactive, Deceased
 - Traits (Multi-select): Personality traits
 - Skills (Multi-select): Special abilities or skills
-- Relationships (Rich text): Links to other characters
+- Relationships (Rich Text): Links to other characters
 - Background (Rich Text): Detailed character history
 - Development Arc (Rich Text): Character's growth throughout the story
 
@@ -43,7 +43,7 @@ Properties:
 - History (Rich Text): Background information
 - Cultural Notes (Rich Text): Specific cultural details
 
-## 4. Story Outline Database
+## 4. Story Arcs Database
 Purpose: Track the overall plot and story arcs.
 
 Properties:
@@ -55,7 +55,7 @@ Properties:
 - Related Characters (Relation): Links to characters involved in this arc
 - Importance (Select): Major, Minor, Background
 
-## 5. StoryRules Database
+## 5. Story Rules Database
 Purpose: Store rules for maintaining story consistency.
 
 Properties:
@@ -87,6 +87,13 @@ Properties:
 - Base Prompt (Rich Text): The foundational prompt for this AI role
 - Parameters (Rich Text): Any specific parameters or instructions
 - Example Output (Rich Text): Sample of expected output
-- Last Updated (Date): When the prompt was last modified
+- Last Updated (Last Edited Time): When the prompt was last modified
 - Version (Number): Version number of the prompt
 - Notes (Rich Text): Any additional notes or considerations
+
+## 8. Steps Logger Database
+Purpose: Log steps for tracking progress.
+
+Properties:
+- Step Number (Title): The number of the step
+- Foot (Select): Left or Right, indicating which foot took the step
